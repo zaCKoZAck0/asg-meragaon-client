@@ -42,6 +42,7 @@ export const Home = () =>{
     const isMobile = width <= 768;
 
     return(<>
+      
       <ContactsInput style={{display:`${showInput?"":"none"}`}} setShowInput={setShowInput}  />
         <div style={{display:"flex",justifyContent:"center"}}><Button onClick={()=>setShowInput(!showInput)} className="btn btn-lg my-2">Add Contacts <AiOutlineUserAdd size={25} style={{marginBottom:"2"}} /></Button></div>
       <div className="row m-0" style={{display:"flex",justifyContent:"center"}}>
@@ -49,6 +50,8 @@ export const Home = () =>{
         <hr className="m-5"  style={{display:`${isMobile?"block":"none"}`}}/>
         <div className="col-lg-7" style={{display:"flex",justifyContent:"center"}}><Messages messages={messages.messages} /></div>  
         </div>
+        <p className="text-center">It's not stuck, its just slow.</p>
+      <p className="text-center">May Take some time to load hosted on a free tier!</p>
     {/* <ContactsInput /> */}
     </>)
 }
