@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://asg-meragaon-server.ayushkumar220.repl.co/api"
+export const BACKEND_URL = "https://asg-meragaon-server-production.up.railway.app/api"

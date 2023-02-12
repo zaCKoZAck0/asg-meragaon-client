@@ -14,7 +14,6 @@ export const Home = () =>{
     const [contacts, setContacts] = useState({contacts: []});
     const [messages, setMessages] = useState({messages: []});
 
-
     const [width, setWidth] = useState(window.innerWidth);
 
     const [showInput, setShowInput] = useState(false);
@@ -50,8 +49,5 @@ export const Home = () =>{
         <hr className="m-5"  style={{display:`${isMobile?"block":"none"}`}}/>
         <div className="col-lg-7" style={{display:"flex",justifyContent:"center"}}><Messages messages={messages.messages} /></div>  
         </div>
-        <p className="text-center">It's not stuck, its just slow.</p>
-      <p className="text-center">May Take some time to load hosted on a free tier!</p>
-    {/* <ContactsInput /> */}
     </>)
 }

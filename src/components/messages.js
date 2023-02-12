@@ -1,6 +1,6 @@
 import { MessageBody } from "./messageBody"
 
-export const Messages = ({messages}) => {
+export const Messages = ({messages, loading}) => {
     messages = messages.sort((date1, date2) => new Date(date1.date) - new Date(date2.date)).reverse()
     return(<div className="container">
         <h2 className="text-center">Messages</h2>
