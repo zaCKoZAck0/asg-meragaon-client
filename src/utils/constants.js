@@ -1,1 +1,1 @@
-export const BACKEND_URL = "http://localhost:4000/api"
+export const BACKEND_URL = "https://asg-meragaon-server.ayushkumar220.repl.co/api"
